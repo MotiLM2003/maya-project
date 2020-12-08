@@ -31,9 +31,9 @@ body {
 
 h3 {
   text-align: center;
-  border-top: 3px solid #f4f7fa;
-  border-bottom: 3px solid #f4f7fa;
-  padding: 4px;
+  border-top: 2px solid rgba(255, 61, 181, 0.8);
+  border-bottom: 2px solid rgba(255, 61, 181, 0.8);
+  padding: 5px;
 
   color: #f4f7fa;
 }
@@ -41,6 +41,10 @@ h3 {
   grid-area: header;
   text-align: center;
   color: #fff;
+  background: radial-gradient(
+    rgba(255, 61, 181, 0.6) 10%,
+    rgba(255, 61, 181, 0.1) 80%
+  );
 }
 .item2 {
   grid-area: about-me;
