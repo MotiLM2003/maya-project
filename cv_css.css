@@ -90,6 +90,7 @@ h3 {
   cursor: pointer;
   transition: 0.8s;
   outline: none;
+  border-radius: 5px;
 }
 
 .default-button:hover {
