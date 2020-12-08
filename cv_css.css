@@ -11,7 +11,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 10px !important;
+  padding-top: 40px !important;
+  min-height: 100vh;
 }
 
 .grid-container {
@@ -30,15 +31,16 @@ body {
 
 h3 {
   text-align: center;
-  border-top: 3px solid #cdcfd1;
+  border-top: 3px solid #f4f7fa;
   border-bottom: 3px solid #f4f7fa;
-  padding: 2px;
+  padding: 4px;
 
   color: #f4f7fa;
 }
 .item1 {
   grid-area: header;
   text-align: center;
+  color: #fff;
 }
 .item2 {
   grid-area: about-me;
@@ -62,17 +64,42 @@ h3 {
   border-radius: 5px;
 }
 
+.item1 #btn-change-image {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+}
+
 /* my image css */
 #myPic {
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   object-position: 50% 50%;
   object-fit: cover;
   border: 6px solid #f4f7fa;
   text-align: center;
 }
 
+.default-button {
+  background-color: transparent;
+  padding: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.default-button:hover {
+  background-color: #fff;
+  color: #252626;
+}
+
+.happy-emojy {
+  width: 30px;
+  vertical-align: middle;
+}
 .box-in {
   animation: rotate-in 0.7s ease-in;
 }
