@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Play', sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
@@ -6,13 +9,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
+  min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-top: 40px !important;
-  min-height: 100vh;
+
+  color: #fff;
+}
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 40px !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+
+  border-radius: 5px;
 }
 
 .grid-container {
@@ -85,7 +103,8 @@ h3 {
   object-fit: cover;
   border: 6px solid #f4f7fa;
   text-align: center;
-  /* mix-blend-mode: luminosity; */
+
+  mix-blend-mode: luminosity;
 }
 
 .default-button {
@@ -151,3 +170,100 @@ h3 {
   }
 }
 /*  end image css */
+
+.button-group {
+  display: flex;
+
+  align-items: center;
+  margin: 5px 0;
+}
+
+.icon {
+  color: rgb(194, 47, 138, 0.9);
+  font-size: 30px;
+}
+
+.button-group a {
+  text-align: center;
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+  padding: 3px 0;
+  margin-left: 15px;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 200px;
+  transition: 0.5s;
+}
+
+.button-group a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #c22f8a;
+}
+
+a.cv {
+  margin-left: 18px;
+}
+
+.form-container .form-group {
+  margin: 10px;
+}
+
+.form-container .form-group.span-2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-group label {
+  display: inline-block;
+  width: 300px;
+}
+
+.form-container input[type='text'],
+.form-container textarea,
+select {
+  outline: none;
+  border: 1px solid #2c3e50;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+select {
+  width: 318px;
+}
+
+.form-container .button,
+#formDone .button {
+  color: #fff;
+  width: 250px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 119px;
+}
+#formDone .form-group {
+  margin-top: 30px;
+}
+
+#formDone {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+}
+
+.form-container .default-button {
+  margin-bottom: 15px;
+}
+
+.form-container #afterComplete {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}

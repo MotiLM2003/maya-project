@@ -1,6 +1,6 @@
 const button = document.getElementById('btn-change-image');
 const image = document.getElementById('myPic');
-button.addEventListener('click', changeImage);
+if (button !== null) button.addEventListener('click', changeImage);
 
 function changeImage() {
   if (image.classList.contains('box-out') || image.classList.length === 0) {
@@ -16,4 +16,18 @@ function changeImage() {
 
     button.textContent = '😁 Make Maya Happier 😁';
   }
+}
+
+function sendForm() {
+  // get form container element
+  const beforeComplete = document.getElementById('beforeComplete');
+  const afterComplete = document.getElementById('afterComplete');
+  beforeComplete.style.display = 'none';
+  afterComplete.style.display = 'block';
+  return false;
+}
+
+// sending to home page.
+function goBack() {
+  window.location = '/';
 }
