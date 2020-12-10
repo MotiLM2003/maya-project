@@ -43,10 +43,10 @@ h3 {
   grid-area: header;
   text-align: center;
   color: #fff;
-  /* background: radial-gradient(
+  background: radial-gradient(
     rgba(255, 61, 181, 0.6) 10%,
     rgba(255, 61, 181, 0.1) 80%
-  ); */
+  );
 }
 .item2 {
   grid-area: about-me;
