@@ -104,7 +104,7 @@ h3 {
   border: 6px solid #f4f7fa;
   text-align: center;
 
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
 }
 
 .default-button {
